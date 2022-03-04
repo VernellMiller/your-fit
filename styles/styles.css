@@ -50,6 +50,10 @@ p1 {
   margin: 100px;
 }
 
+p {
+  display: inline;
+}
+
 button {
   padding: 2px;
 }
