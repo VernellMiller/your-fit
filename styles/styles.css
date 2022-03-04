@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border-top: solid black;
+  border-bottom: solid black;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.feet {
+  border-top: solid black;
+  margin-top: 10px;
+}
+
+.average {
+  background-color: cornflowerblue;
+  width: 100px;
+  height: 800px;
+  position: absolute;
+  margin-left: 100px;
+}
