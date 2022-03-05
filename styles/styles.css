@@ -20,8 +20,8 @@ h1 {
 }
 
 .feet {
+  padding: 0;
   border-top: solid black;
-  margin-top: 10px;
 }
 
 .average {
