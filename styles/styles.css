@@ -27,7 +27,7 @@ h1 {
 .average {
   background-color: cornflowerblue;
   width: 100px;
-  height: 800px;
+  height: 100%;
   position: absolute;
   margin-left: 100px;
 }
@@ -35,7 +35,7 @@ h1 {
 .persons {
   background-color: cadetblue;
   width: 100px;
-  height: 800px;
+  height: 100%;
   position: absolute;
   margin-left: 300px;
   justify-content: space-between;
