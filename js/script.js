@@ -5,6 +5,18 @@ const percentage = function (target) {
   return percent;
 };
 
+// const positionDiv = function (percent) {
+//   const remainder = 100 - percent;
+//   document.querySelector("#p1").style.marginTop = remainder;
+//   console.log(remainder);
+//   return remainder;
+// };
+
+// positionDiv();
+
+// const remainder = 100 - percent;
+// console.log(remainder);
+
 document.querySelector("button").addEventListener("click", function () {
   let personOneName = document.querySelector(".name").value;
   document.querySelector(".persons").innerHTML = personOneName;
@@ -22,6 +34,8 @@ document.querySelector("button").addEventListener("click", function () {
   console.log(inch);
 
   document.querySelector("#p1").style.height = percentage(foot) + "%";
+
+  document.querySelector("#p1").style.bottom = 0;
 
   console.log(percentage(foot));
 });
@@ -53,6 +67,6 @@ document.querySelector("button").addEventListener("click", function () {
 //       break;
 //   }
 
-// TODO create function that adjusts the height of .persons div according to the foot value.
+// TODO create function that adjusts the height of .persons div according to the foot value. ✔
 
 // TODO create function that adjusts the height of .persons div according to the inch value.
