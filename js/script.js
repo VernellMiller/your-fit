@@ -21,7 +21,7 @@ document.querySelector("button").addEventListener("click", function () {
   const inch = document.querySelector("#inch").value;
   console.log(inch);
 
-  document.querySelector("#p1").style.height = 50 + "%";
+  document.querySelector("#p1").style.height = percentage(foot) + "%";
 
   console.log(percentage(foot));
 });
