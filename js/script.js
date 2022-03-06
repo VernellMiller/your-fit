@@ -5,6 +5,12 @@ const footPercentage = function (target) {
   return percent;
 };
 
+// const inchPercentage = function (target) {
+//   const inchTotal = 0.9;
+//   const percent = (target / inchTotal) * 100;
+//   return percent;
+// };
+
 document.querySelector("#p1").style.height = footPercentage(0.2) + "%";
 document.querySelector("#p1").style.bottom = 0;
 
@@ -41,10 +47,12 @@ document.querySelector("button").addEventListener("click", function () {
   console.log(inch);
 
   document.querySelector("#p1").style.height = footPercentage(foot) + "%";
+  // document.querySelector("#p1").style.height = footPercentage(inch) + "%";
 
   document.querySelector("#p1").style.bottom = 0;
 
   console.log(footPercentage(foot));
+  console.log(footPercentage(inch));
 });
 
 //   switch (foot) {
