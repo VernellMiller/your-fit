@@ -1,9 +1,16 @@
 "use strict";
-const percentage = function (target) {
+const footPercentage = function (target) {
   const total = 8;
   const percent = (target / total) * 100;
   return percent;
 };
+
+document.querySelector("#p1").style.height = footPercentage(0.2) + "%";
+document.querySelector("#p1").style.bottom = 0;
+
+// sets the average male height.
+document.querySelector(".average").style.height = footPercentage(5) + "%";
+document.querySelector(".average").style.bottom = 0;
 
 // const positionDiv = function (percent) {
 //   const remainder = 100 - percent;
@@ -33,11 +40,11 @@ document.querySelector("button").addEventListener("click", function () {
   const inch = document.querySelector("#inch").value;
   console.log(inch);
 
-  document.querySelector("#p1").style.height = percentage(foot) + "%";
+  document.querySelector("#p1").style.height = footPercentage(foot) + "%";
 
   document.querySelector("#p1").style.bottom = 0;
 
-  console.log(percentage(foot));
+  console.log(footPercentage(foot));
 });
 
 //   switch (foot) {
