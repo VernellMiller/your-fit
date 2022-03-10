@@ -48,7 +48,6 @@ document.querySelector("button").addEventListener("click", function () {
   console.log(`Height: ${height}`);
 
   document.querySelector("#p1").style.height = height + "%";
-  // document.querySelector("#p1").style.height = inchPercentage(inch) + "%";
 
   console.log(`foot percentage: ${footPercentage(foot)}`);
   console.log(`inch percentage: ${inchPercentage(inch)}`);
