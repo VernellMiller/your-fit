@@ -1,19 +1,19 @@
 "use strict";
 
-const footPercentage = function (target) {
+const calcPercentage = function (target) {
   const total = 8;
   const percent = (target / total) * 100;
   return percent;
 };
 
 // Gives person 1 div a starting height.
-document.querySelector("#p1").style.height = footPercentage(0.2) + "%";
+document.querySelector("#p1").style.height = calcPercentage(0.2) + "%";
 // Sets person 1 div to the bottom.
 document.querySelector("#p1").style.bottom = 0;
 
 // sets the average male height.
 document.querySelector(".average").style.height =
-  footPercentage(5 + 10 / 12) + "%";
+  calcPercentage(5 + 10 / 12) + "%";
 // Sets average div to the bottom.
 document.querySelector(".average").style.bottom = 0;
 
@@ -36,15 +36,15 @@ document.querySelector("button").addEventListener("click", function () {
   const overall = foot + inch;
   console.log(`Total: ${overall}`);
 
-  const sum1 = footPercentage(foot);
-  const sum2 = footPercentage(inch);
+  const sum1 = calcPercentage(foot);
+  const sum2 = calcPercentage(inch);
   const height = sum1 + sum2;
   console.log(`Height: ${height}`);
 
   document.querySelector("#p1").style.height = height + "%";
 
-  console.log(`foot percentage: ${footPercentage(foot)}`);
-  console.log(`inch percentage: ${footPercentage(inch)}`);
+  console.log(`foot percentage: ${calcPercentage(foot)}`);
+  console.log(`inch percentage: ${calcPercentage(inch)}`);
 });
 
 document.querySelector("#p1").style.bottom = 0;
