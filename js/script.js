@@ -6,12 +6,6 @@ const footPercentage = function (target) {
   return percent;
 };
 
-const inchPercentage = function (target) {
-  const total = 8;
-  const percent = (target / total) * 100;
-  return percent;
-};
-
 // Gives person 1 div a starting height.
 document.querySelector("#p1").style.height = footPercentage(0.2) + "%";
 // Sets person 1 div to the bottom.
@@ -43,14 +37,14 @@ document.querySelector("button").addEventListener("click", function () {
   console.log(`Total: ${overall}`);
 
   const sum1 = footPercentage(foot);
-  const sum2 = inchPercentage(inch);
+  const sum2 = footPercentage(inch);
   const height = sum1 + sum2;
   console.log(`Height: ${height}`);
 
   document.querySelector("#p1").style.height = height + "%";
 
   console.log(`foot percentage: ${footPercentage(foot)}`);
-  console.log(`inch percentage: ${inchPercentage(inch)}`);
+  console.log(`inch percentage: ${footPercentage(inch)}`);
 });
 
 document.querySelector("#p1").style.bottom = 0;
